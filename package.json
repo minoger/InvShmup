@@ -1,0 +1,14 @@
+{
+  "name": "my_invadors",
+  "version": "0.9.0",
+  "description": "a space invader game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
