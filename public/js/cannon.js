@@ -45,11 +45,6 @@ class Cannon {
 
 }
 
-function help() {
-	//do something
-	//
-}
-
 
 
 
