@@ -158,7 +158,7 @@ if (ships_lost > 80) {
 }
 
 
-//so .. let create some bombs from the invaderrs
+//so .. let create some bombs from the invaders
 
 for (let i = 0; i < ships.length; i++) {
 	if(round(random(0,1000)) === 1 ) {
@@ -170,9 +170,14 @@ for (let i = 0; i < ships.length; i++) {
 //display the bombs
 for (let i = 0; i < bombs.length; i++) {
 	bombs[i].display();
+	bombs[i].move();
+	if (bombs[i].y === height-10) {
+		bombs[i].destroy();
+		bombs.splice(i,1);
+	}
 }
 
-//move the bombs
+/* move the bombs
 for (let i = 0; i < bombs.length; i++) {
 	bombs[i].move();
 	if (bombs[i].y === height-10) {
@@ -180,6 +185,7 @@ for (let i = 0; i < bombs.length; i++) {
 		bombs.splice(i,1);
 	}
 }
+*/
 
 //count up if the bomb hit the cannon
 
